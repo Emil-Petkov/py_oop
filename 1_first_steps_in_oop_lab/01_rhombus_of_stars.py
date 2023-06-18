@@ -12,3 +12,4 @@ def draw_rhombus(n):
 
 
 draw_rhombus(int(input()))
+
