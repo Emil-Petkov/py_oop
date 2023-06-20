@@ -22,3 +22,4 @@ draw_rhombus(int(input())) # 5
 #   * * *
 #    * *
 #     *
+
