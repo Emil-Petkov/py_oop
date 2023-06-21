@@ -84,5 +84,10 @@ class Person():
               f"years old from {self.town}.")
 
 
-person_one = Person("Emil", "Petkov", 31, "Men")
-print(person_one.__class__.__name__)
+person_one = Person("Emil", "Petkov", 31, "Men") 
+
+person_one.text() # My name is Emil and Petkov. I'm a Men 31 years old from Sofia.
+print(person_one.__class__.__name__) # Person
+
+#################################################################################
+
