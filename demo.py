@@ -70,3 +70,20 @@ printing_list(second_list)
 # 14
 
 #################################################################################
+
+
+class Person():
+    def __init__(self, first_name, last_name, age, gender, town="Sofia"):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.gender = gender
+        self.town = town
+
+    def text(self):
+        print(f"My name is {self.first_name} and {self.last_name}. I'm a {self.gender} {self.age} " \
+              f"years old from {self.town}.")
+
+
+person_one = Person("Emil", "Petkov", 31, "Men")
+print(person_one.__class__.__name__)
