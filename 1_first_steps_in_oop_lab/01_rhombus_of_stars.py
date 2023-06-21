@@ -1,7 +1,7 @@
 def get_line(i, n):
     spaces = n - 1 - i
     stars = i + 1
-    return " " * spaces + "* " * stars
+    return " " * spaces + ("* " * stars).strip()  # strip() removed last space on the line
 
 
 def draw_rhombus(n):
@@ -11,4 +11,15 @@ def draw_rhombus(n):
         print(get_line(j, n))
 
 
-draw_rhombus(int(input()))
+draw_rhombus(int(input())) # 5
+
+#     *
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
+#  * * * *
+#   * * *
+#    * *
+#     *
+
