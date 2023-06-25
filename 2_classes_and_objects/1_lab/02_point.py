@@ -20,4 +20,3 @@ p.set_y(5)
 print(p)
 
 
-
