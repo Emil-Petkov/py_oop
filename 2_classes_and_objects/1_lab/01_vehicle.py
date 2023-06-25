@@ -15,4 +15,3 @@ print(car.gadgets)
 car.gadgets.append('Hudly Wireless')
 print(car.gadgets)
 
-
