@@ -35,4 +35,3 @@ class Time:
 
 time = Time(23, 59, 59)
 print(time.next_second())
-
