@@ -44,4 +44,3 @@ class Album:
             result += f"== {song.get_info()}\n"
 
         return result.strip()
-
