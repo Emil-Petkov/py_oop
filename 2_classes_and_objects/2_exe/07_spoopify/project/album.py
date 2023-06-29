@@ -46,4 +46,3 @@ class Album:
         return result.strip()
 
 
-
