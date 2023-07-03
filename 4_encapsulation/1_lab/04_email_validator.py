@@ -33,3 +33,4 @@ print(email_validator.validate("pe77er@gmail.com"))
 print(email_validator.validate("georgios@gmail.net"))
 print(email_validator.validate("stamatito@abv.net"))
 print(email_validator.validate("abv@softuni.bg"))
+
