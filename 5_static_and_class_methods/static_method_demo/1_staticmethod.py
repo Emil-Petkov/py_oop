@@ -6,14 +6,15 @@ class AlaBala:
     def just_func(self):
         return f"Hello my name is {self.name} and my age is {self.age}."
 
-    @staticmethod
-    def other_func():  # self already is a just parameter name!
-        return "Hi Mom!"
 
     """
     now other_func works as a regular function 
     in the AlaBala class that is not related to self
     """
+    
+    @staticmethod
+    def other_func():  # self already is a just parameter name!
+        return "Hi Mom!"
 
 
 p = AlaBala("Emil", 101)
