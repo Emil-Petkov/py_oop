@@ -23,3 +23,4 @@ print(p.just_func())  # Hello my name is Emil and my age is 101.
 # print(AlaBala.other_func()) # TypeError: AlaBala.other_func() missing 1 required positional argument: 'self'
 
 print(p.other_func())  # Hi Mom!
+
