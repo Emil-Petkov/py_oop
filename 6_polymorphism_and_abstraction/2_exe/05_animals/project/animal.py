@@ -1,4 +1,4 @@
-from abc import ABC,abstractmethod
+from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
@@ -7,12 +7,9 @@ class Animal(ABC):
         self.age = age
         self.gender = gender
 
-
     @abstractmethod
     def make_sound(self):
         pass
 
-
-    @abstractmethod
     def __repr__(self):
-        pass
+        return f"This is {self.name}. {self.name} is a {self.age} year old {self.gender} {self.__class__.__name__}"
