@@ -24,3 +24,9 @@ s = Square(2)
 
 print_area(r)  # 6
 print_area(s)  # 4
+
+
+
+
+
+
