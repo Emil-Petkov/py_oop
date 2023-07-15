@@ -28,6 +28,6 @@ discount = student.get_discount()
 discount2 = student2.get_discount()
 discount3 = student3.get_discount()
 
-print(discount)
-print(discount2)
-print(discount3)
+print(discount) # 400.0
+print(discount2) # 1000
+print(discount3) # 1000
