@@ -28,4 +28,3 @@ print_area(s)  # 4
 
 
 
-
