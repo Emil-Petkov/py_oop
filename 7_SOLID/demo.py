@@ -50,10 +50,9 @@ class AdditionalDiscount(StudentTaxes):
         return 0
 
 
-student = StudentTaxes("Emil", 1000, 6)
-student2 = StudentTaxes("Ivan", 1000, 5.5)
-student3 = StudentTaxes("Dragan", 1000, 5)
+student = [StudentTaxes("Emil", 1000, 6),  # 400.0
+           StudentTaxes("Ivan", 1000, 5.5),  # 400.0
+           StudentTaxes("Dragan", 1000, 5)  # 0
+           ]
 
-print(student.get_discount())  # 400.0
-print(student2.get_discount())  # 400.0
-print(student3.get_discount())  # 0
+[print(s.get_discount()) for s in student]
