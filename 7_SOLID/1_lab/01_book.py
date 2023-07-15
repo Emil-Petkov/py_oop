@@ -14,13 +14,13 @@ class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
-        self.page = 0
+        self.pages = 0
 
-    def turn_page(self, page):
-        self.page = page
+    def turn_page(self, pages):
+        self.pages = pages
 
 
-class Libary:
+class Library:
     def __init__(self):
         self.books = []
 
@@ -34,7 +34,17 @@ class Libary:
         return None
 
 
-book = Book("Python for beginners", "Emil Petkov")
+book1 = Book("Python for beginners", "Emil Petkov")
+book1.turn_page(650)
 
-print(book.title)  # Python for beginners
-print(book.author)  # Emil Petkov
+book2 = Book("From Zero to Hero in Python", "Emil Petkov")
+book2.turn_page(900)
+
+library = Library()
+library.add_book(book1)
+library.add_book(book2)
+
+search = library.find_book("Python for beginners")
+print(search.title)  # Python for beginners
+print(search.author)  # Emil Petkov
+print(book1.pages)  # 650
