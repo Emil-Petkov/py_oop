@@ -31,7 +31,7 @@ class Manager:
 
     def set_worker(self, worker):
         if not isinstance(worker, BaseWorker):
-            raise AssertionError('`worker` must be of type {}'.format(BaseWorker))
+            raise AssertionError(f'`worker` must be of type {BaseWorker}')
 
         self.worker = worker
 
