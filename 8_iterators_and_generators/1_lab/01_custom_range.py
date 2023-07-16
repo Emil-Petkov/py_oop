@@ -20,3 +20,14 @@ class custom_range:
 one_to_ten = custom_range(1, 10)
 for num in one_to_ten:
     print(num)
+
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
