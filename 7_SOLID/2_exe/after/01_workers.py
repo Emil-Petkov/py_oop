@@ -58,3 +58,7 @@ try:
 
 except AssertionError:
     print("manager fails to support super_worker....")
+
+# I'm working!!
+# I work very hard!!!
+# I'm super, giga, mega lazy :)
