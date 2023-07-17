@@ -9,4 +9,3 @@ def squares(n):
 print(*squares(5))
 
 # 1 4 9 16 25
-
