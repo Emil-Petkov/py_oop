@@ -14,6 +14,7 @@
 # print(uppercase(get_shopping_list))
 # print(uppercase(get_name))
 
+
 # EGGS, MILK, BREAD
 # EMIL PETKOV
 
@@ -48,14 +49,16 @@
 # I have to buy: EGGS, MILK, BREAD
 
 ################################################################
+from functools import wraps
 
 
-def aaa(func_to_decorate):  # The **Decorator**
-    def func_wrapper():
-        result = func_to_decorate()
+def aaa(func):  # The **Decorator**
+    @wraps(func)
+    def wrapper():
+        result = func()
         return result.upper()
 
-    return func_wrapper
+    return wrapper
 
 
 @aaa  # Name of the function => syntax sugar for `get_shopping_list = uppercase(get_shopping_list)`
@@ -68,6 +71,9 @@ def get_name():
     return "Emil Petkov"
 
 
+print(get_name)  # <function aaa.<locals>.wrapper at 0x7fa1c05159e0>
+print(get_name.__name__)  # `wrapper` вместо `get_name`, което `get_name` е името на декорираната функция
+print(get_name.__name__)  # След прилагането на @wraps(func) вече излиза името на декорираната функция => `get_name`
 print(f"My name is {get_name()}")
 print(f"I have to buy: {get_shopping_list()}")
 
@@ -82,3 +88,5 @@ print(f"I have to buy: {get_shopping_list()}")
 
 # Декоратора е функция с един параметър `func` и връща друга функция `wrapper`
 # Декоратора може да е в друг файл и трябва просто да се импортне
+
+# !!! Трябва да декорираме `wrapper` функцията с @wraps за да виждам името на функцията.
