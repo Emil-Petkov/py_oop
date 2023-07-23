@@ -91,4 +91,3 @@ print(f"I have to buy: {get_shopping_list()}")
 
 # !!! Трябва да декорираме `wrapper` функцията с @wraps за да виждам името на функцията.
 
-
