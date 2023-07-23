@@ -58,12 +58,12 @@ def aaa(func_to_decorate):  # The **Decorator**
     return func_wrapper
 
 
-@aaa  # Name of the function
+@aaa  # Name of the function => syntax sugar for `get_shopping_list = uppercase(get_shopping_list)`
 def get_shopping_list():
     return "Eggs, Milk, Bread"
 
 
-@aaa
+@aaa  # Name of the function => syntax sugar for `get_name = uppercase(get_name)`
 def get_name():
     return "Emil Petkov"
 
