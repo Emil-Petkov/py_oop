@@ -96,4 +96,3 @@ print(f"I have to buy: {get_shopping_list()}")
 
 
 
-
