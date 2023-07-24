@@ -1,0 +1,31 @@
+def cache(func):
+    memo = {}
+
+    def wrapper(n):
+        if n in memo:
+            return memo[n]
+
+        result = func(n)
+        memo[n] = result
+
+        return result
+
+    wrapper.log = memo
+    return wrapper
+
+
+@cache
+def fibonacci(n):
+    if n < 2:
+
+        return n
+
+    else:
+
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+fibonacci(3)
+print(fibonacci.log)
+
+# {1: 1, 0: 0, 2: 1, 3: 2}
