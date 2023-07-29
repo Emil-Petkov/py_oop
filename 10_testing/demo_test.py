@@ -1,3 +1,4 @@
+import unittest
 from unittest import TestCase
 
 
@@ -19,3 +20,9 @@ class MyFirstTestEver(TestCase):
         self.assertNotEquals(1, 2)
         # Ran 1 test in 0.001s
         # OK
+
+
+#  Ако няма __main__ тестовете няма до могат да се пуснат от конзолата
+
+if __name__ == '__main__':
+    unittest.main()
