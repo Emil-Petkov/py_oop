@@ -90,4 +90,3 @@ person_one.text() # My name is Emil and Petkov. I'm a Men 31 years old from Sofi
 print(person_one.__class__.__name__) # Person
 
 #################################################################################
-
